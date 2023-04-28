@@ -1,0 +1,10 @@
+[Unit]
+Description=Runs interface script on boot, which polls GPIO and makes calls to payloads
+
+[Service]
+ExecStart=/usr/bin/python3 /home/pi/Documents/pi-otg/interface.py
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
