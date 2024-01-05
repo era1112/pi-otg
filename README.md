@@ -20,7 +20,7 @@ Flow of control:
 - 'main.sh" carries out the system functions when in the triggered state.
 
 Project layout:
-- interface.py and payload.sh are symlinks that you alter when you want a different trigger interface or payload
+- interface.py and main.sh are symlinks that you alter when you want a different trigger interface or payload
 - the interfaces and payloads folders have interfaces and payloads to choose from
 
 Documentation:
