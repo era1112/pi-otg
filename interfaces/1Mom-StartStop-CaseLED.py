@@ -10,8 +10,8 @@ button = Button(button_pin)
 
 # Define the function to be executed when the button is pressed
 def button_pressed():
-    print("Launching payload")
-    call(["/home/pi/Documents/pi-otg/payload.sh"])
+    print("Launching script")
+    call(["/home/pi/Documents/pi-otg/main.sh"])
 
 # When the button is pressed, call the button_pressed() function
 button.when_pressed = button_pressed
