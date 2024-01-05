@@ -10,8 +10,8 @@ Setup:
 - Make "interface.sh" (symlink) point to the script in /interfaces/ that defines the button/led behavior you want, connect pushbutton and LEDs to appropriate gpio pin.
 - set up systemctl to keep interface.sh running:
   - copy pi-otg.service to /etc/systemd/system
-  - run the service, this should make it stay on across reboots: sudo systemctl start pi-otg.service
-  - check the service is running: sudo systemctl status pi-otg.service
+  - run the service, this should make it stay on across reboots: ```sudo systemctl start pi-otg.service```
+  - check the service is running: ```sudo systemctl status pi-otg.service```
 - reboot pi, push the button, your script will run
 
 Flow of control:
